@@ -1,27 +1,17 @@
 /* * Style specs:
 * `body`
-  * The background color is `#efeee7`.
-  * The font used `"Georgia", Times New Roman, Times, serif;`.
-  * The font color is `#333333`.
   * Be sure to zero out the body margins and padding so the page is flush to the top of the page.
   * Adjust the line height so it is 1.5 times (150%) the size of the font.
-* `header`
-  * The background-color is `#333333`.
 * `h1`
-  * The font color is `#eee`.
-  * The font size is `28px`.
   * Look at the example on the screen, and eyeball the padding and/or margins and positioning of the text.
 * `h2`
-  * The font size is `24px`
+
 * Make `.container` have a width of 1024 pixels, and center it. You do this using `margin: 0 auto;`.
 * Make `#main-bio`, `#contact-info`, `#bio-image` all `float: left`.
 * Make the `#bio-image` have a width of 200 pixels.
 * Be sure to include `alt` text in all images
 * `#main-bio` should have a width of `70%`.
 * Add margins to the image so there is distance between it and the bio text.
-* `#content-info` should have a width of `30%`.
-* Make the link color `#d21034`.
-* `#figure` should be given relative positioning
 * `#bio-name` should use absolute positioning and be placed at the bottom-center of your `#bio-image`
 
 */
@@ -32,7 +22,7 @@ body {
     font-color: #333333;
     margin: 0px;
     padding: 0px;
-    line-height: 150%;
+    line-height: 1.5;
 }
 
 header {
@@ -40,9 +30,10 @@ header {
 }
 
 h1 {
-    font-color: #eee;
+    color: #eee;
     font-size: 28px;
-    /*positioning*/
+    text-align: center;
+    color: white;
 }
 
 h2 {
@@ -56,62 +47,35 @@ h2 {
 
 #main-bio {
     float: left;
+    width: 70%;
 }
 
 #contact-info {
     float: left;
+    width: 30%;
 }
 
 #bio-image {
     float: left;
     width: 200px;
+    margin: 20px;
+    top: 100px;
 }
 
-h3 {
+#bio-name {
     position: absolute;
-    left: 20px;
-    top: 5px;
+    top: 130px;
+    left: 80px;
+
 }
 
-h4 {
-    position: absolute;
-    right: 20px;
-    bottom: 5px;    
+a {
+    color: #d21034;
 }
 
-h5 {
-    position: absolute;
-    left: 5px;
-    top: 50%;    
-}
-
-
-p {
-    /* CONTENT - width and height */
-    width: 50%;
-
-    /* border */
-    border: 2px solid blue;
-
-    /* padding */
-    padding-left: 40px;
-
-    /* margin */
-    margin: 0 auto;
-}
-
-.box {
-    width: 100px;
-    height: 100px;
-    border: 2px solid blue;
-}
-
-.box2 {
-    position: absolute;
-    bottom: 40px;
-    right: 20px;
-}
-
-.box-set {
+#figure {
     position: relative;
+    margin-right: 150px;
+    margin-bottom: 100px;
+
 }
